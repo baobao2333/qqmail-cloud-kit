@@ -1,0 +1,9 @@
+# Copy only into a NEW dedicated Codex home. No credentials are included.
+# The file credential backend stores plaintext. POSIX directory/file: 0700/0600.
+mcp_oauth_credentials_store = "file"
+mcp_oauth_callback_port = 14556
+
+[mcp_servers.qqmail]
+url = "https://api.mail.qq.com/mcp"
+scopes = ["alias:read", "mail:read"]
+enabled_tools = ["GetMe", "SearchMessages", "GetMessage"]
